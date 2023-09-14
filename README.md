@@ -12,6 +12,9 @@ Both methods have a parameter λ that controls the amount of regularization. Whe
 There is no definitive answer to when to use lasso and ridge regression, as different methods may work better for different datasets and problems. However, some general guidelines are:
 
 Use lasso regression when you have many features and you want to select only the most important ones for your model. Lasso regression can perform feature selection by setting some coefficients to zero, which effectively removes them from the model. This can help reduce the complexity and improve the interpretability of your model.
+
 Use ridge regression when you have many features that are correlated with each other and you want to keep them all in your model. Ridge regression can handle multicollinearity by shrinking the coefficients of correlated features, which reduces their influence on the model. This can help improve the stability and accuracy of your model.
+
 You can also use a combination of lasso and ridge regression, known as elastic net, which adds both the L1 and L2 penalties to the cost function. This can balance the advantages of both methods and overcome some of their limitations. For example, elastic net can select more than one feature from a group of correlated features, whereas lasso may select only one or none.
+
 Ultimately, the best way to decide which method to use is to try them out on your data and compare their performance using appropriate metrics and validation techniques. You can also tune the regularization parameter λ to find the optimal level of regularization for your model.
